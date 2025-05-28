@@ -12,4 +12,5 @@ func main() {
 	log.Println("This is the end of the main function.")
 	log.Println("Goodbye!")
 	log.Println("Thank you for using this Go application.")
+	log.Println("Feel free to modify the code and add more features.")
 }
