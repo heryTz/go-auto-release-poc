@@ -1,2 +1,4 @@
 semantic-release
 .semrel
+# Added by goreleaser init:
+dist/
