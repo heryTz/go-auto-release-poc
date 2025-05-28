@@ -13,4 +13,5 @@ func main() {
 	log.Println("Goodbye!")
 	log.Println("Thank you for using this Go application.")
 	log.Println("Feel free to modify the code and add more features.")
+	log.Println("You can also explore other packages in the Go standard library.")
 }
