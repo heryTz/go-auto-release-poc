@@ -1,10 +1,8 @@
+version: 2
+
 builds:
   - env:
       - CGO_ENABLED=0
-    targets:
-      - linux_amd64
-      - darwin_amd64
-      - darwin_arm64
     flags:
       - -trimpath
       - -buildvcs=false
@@ -14,3 +12,9 @@ builds:
       - -X main.version={{.Version}}
       - -X main.commitSHA={{.FullCommit}}
       - -X main.buildDate={{.Date}}
+
+archives:
+  - id: default
+    format_overrides:
+      - goos: windows
+        formats: ["zip"]
