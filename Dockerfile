@@ -2,7 +2,7 @@ ARG APP_NAME=go-auto-release-poc
 
 FROM golang:1.24-alpine AS builder
 WORKDIR /app
-COPY /app/go.mod ./
+COPY go.mod ./
 RUN go mod download
 COPY . .
 RUN go build
